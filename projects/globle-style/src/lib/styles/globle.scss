@@ -1,0 +1,12 @@
+@import url("~reset-css/reset.css");
+@import url("~normalize.css/normalize.css");
+@import "../styles/function.scss";
+@import "../styles/reset.scss";
+
+:root {
+  font-size: 1rem;
+}
+
+@include global {
+  // outline: 1px solid;
+}

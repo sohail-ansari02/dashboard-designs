@@ -1,0 +1,66 @@
+::ng-deep {
+  .x-ray,
+  .x-ray * {
+    outline: 1px solid currentColor;
+  }
+}
+
+:host {
+  $fg: #1e1e1e;
+  $bg: grey;
+  $checked: #62f163;
+  $unChecked: rgb(202, 188, 29);
+  outline: none !important;
+
+  display: block;
+  width: fit-content;
+  // transform: scale(0.2);
+  zoom: 0.2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 200px;
+    height: 100px;
+    background: #{bg};
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+
+  label:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    background: #{$fg};
+    border-radius: 90px;
+    transition: 0.06s;
+  }
+
+  input + label {
+    background-color: #{$unChecked};
+  }
+  input:checked + label {
+    background: #{$checked};
+  }
+
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+
+  label:active:after {
+    width: 130px;
+  }
+}
