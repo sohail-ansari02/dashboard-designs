@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "analytics-1": {
+    "finance": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -13,25 +13,25 @@
           "strict": true
         }
       },
-      "root": "projects/analytics-1",
-      "sourceRoot": "projects/analytics-1/src",
+      "root": "projects/finance",
+      "sourceRoot": "projects/finance/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/analytics-1",
-            "index": "projects/analytics-1/src/index.html",
-            "main": "projects/analytics-1/src/main.ts",
-            "polyfills": "projects/analytics-1/src/polyfills.ts",
-            "tsConfig": "projects/analytics-1/tsconfig.app.json",
+            "outputPath": "dist/finance",
+            "index": "projects/finance/src/index.html",
+            "main": "projects/finance/src/main.ts",
+            "polyfills": "projects/finance/src/polyfills.ts",
+            "tsConfig": "projects/finance/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/analytics-1/src/favicon.ico",
-              "projects/analytics-1/src/assets"
+              "projects/finance/src/favicon.ico",
+              "projects/finance/src/assets"
             ],
             "styles": [
-              "projects/analytics-1/src/styles.scss"
+              "projects/finance/src/styles.scss"
             ],
             "scripts": []
           },
@@ -51,8 +51,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/analytics-1/src/environments/environment.ts",
-                  "with": "projects/analytics-1/src/environments/environment.prod.ts"
+                  "replace": "projects/finance/src/environments/environment.ts",
+                  "with": "projects/finance/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "analytics-1:build:production"
+              "browserTarget": "finance:build:production"
             },
             "development": {
-              "browserTarget": "analytics-1:build:development"
+              "browserTarget": "finance:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,126 +83,23 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "analytics-1:build"
+            "browserTarget": "finance:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/analytics-1/src/test.ts",
-            "polyfills": "projects/analytics-1/src/polyfills.ts",
-            "tsConfig": "projects/analytics-1/tsconfig.spec.json",
-            "karmaConfig": "projects/analytics-1/karma.conf.js",
+            "main": "projects/finance/src/test.ts",
+            "polyfills": "projects/finance/src/polyfills.ts",
+            "tsConfig": "projects/finance/tsconfig.spec.json",
+            "karmaConfig": "projects/finance/karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/analytics-1/src/favicon.ico",
-              "projects/analytics-1/src/assets"
+              "projects/finance/src/favicon.ico",
+              "projects/finance/src/assets"
             ],
             "styles": [
-              "projects/analytics-1/src/styles.scss"
-            ],
-            "scripts": []
-          }
-        }
-      }
-    },
-    "casino-analytics": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
-      "root": "projects/casino-analytics",
-      "sourceRoot": "projects/casino-analytics/src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/casino-analytics",
-            "index": "projects/casino-analytics/src/index.html",
-            "main": "projects/casino-analytics/src/main.ts",
-            "polyfills": "projects/casino-analytics/src/polyfills.ts",
-            "tsConfig": "projects/casino-analytics/tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/casino-analytics/src/favicon.ico",
-              "projects/casino-analytics/src/assets"
-            ],
-            "styles": [
-              "projects/casino-analytics/src/styles.scss"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "projects/casino-analytics/src/environments/environment.ts",
-                  "with": "projects/casino-analytics/src/environments/environment.prod.ts"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "casino-analytics:build:production"
-            },
-            "development": {
-              "browserTarget": "casino-analytics:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "casino-analytics:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/casino-analytics/src/test.ts",
-            "polyfills": "projects/casino-analytics/src/polyfills.ts",
-            "tsConfig": "projects/casino-analytics/tsconfig.spec.json",
-            "karmaConfig": "projects/casino-analytics/karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/casino-analytics/src/favicon.ico",
-              "projects/casino-analytics/src/assets"
-            ],
-            "styles": [
-              "projects/casino-analytics/src/styles.scss"
+              "projects/finance/src/styles.scss"
             ],
             "scripts": []
           }
@@ -210,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "analytics-1"
+  "defaultProject": "finance"
 }
