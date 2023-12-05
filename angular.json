@@ -105,7 +105,38 @@
           }
         }
       }
+    },
+    "globleStyle": {
+      "projectType": "library",
+      "root": "projects/globle-style",
+      "sourceRoot": "projects/globle-style/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/globle-style/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/globle-style/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/globle-style/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/globle-style/src/test.ts",
+            "tsConfig": "projects/globle-style/tsconfig.spec.json",
+            "karmaConfig": "projects/globle-style/karma.conf.js"
+          }
+        }
+      }
     }
   },
-  "defaultProject": "finance"
+  "defaultProject": "globleStyle"
 }
