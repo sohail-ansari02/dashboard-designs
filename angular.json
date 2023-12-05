@@ -30,9 +30,7 @@
               "projects/finance/src/favicon.ico",
               "projects/finance/src/assets"
             ],
-            "styles": [
-              "projects/finance/src/styles.scss"
-            ],
+            "styles": ["projects/finance/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -98,9 +96,7 @@
               "projects/finance/src/favicon.ico",
               "projects/finance/src/assets"
             ],
-            "styles": [
-              "projects/finance/src/styles.scss"
-            ],
+            "styles": ["projects/finance/src/styles.scss"],
             "scripts": []
           }
         }
@@ -108,6 +104,11 @@
     },
     "globleStyle": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/globle-style",
       "sourceRoot": "projects/globle-style/src",
       "prefix": "lib",

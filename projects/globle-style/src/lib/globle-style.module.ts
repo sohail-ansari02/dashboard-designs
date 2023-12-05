@@ -1,13 +1,9 @@
 import { NgModule } from '@angular/core';
-
-
+import { GlobleStyleComponent } from './globle-style/globle-style.component';
 
 @NgModule({
-  declarations: [
-  ],
-  imports: [
-  ],
-  exports: [
-  ]
+  declarations: [GlobleStyleComponent],
+  imports: [],
+  exports: [GlobleStyleComponent],
 })
-export class GlobleStyleModule { }
+export class GlobleStyleModule {}
