@@ -1,7 +1,7 @@
 @import url("~reset-css/reset.css");
 @import url("~normalize.css/normalize.css");
-@import "../styles/function.scss";
 @import "../styles/reset.scss";
+@import "../styles/mixins.scss";
 
 :root {
   font-size: 1rem;
