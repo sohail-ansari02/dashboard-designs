@@ -1,0 +1,135 @@
+// CSS can be used to style other types of documents, apart from HTML.
+// This is where the :root element comes in to play, allowing you to style the
+// root element of a document. This can be especially important when styling
+// SVG documents, where the html selector will not work.
+// see: https://www.30secondsofcode.org/css/s/root-vs-html/#:~:text=CSS%20can%20be%20used%20to%20style%20other%20types%20of%20documents%2C%20apart%20from%20HTML.%20This%20is%20where%20the%20%3Aroot%20element%20comes%20in%20to%20play%2C%20allowing%20you%20to%20style%20the%20root%20element%20of%20a%20document.%20This%20can%20be%20especially%20important%20when%20styling%20SVG%20documents%2C%20where%20the%20html%20selector%20will%20not%20work.
+:root {
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/*
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-weight: normal;
+  font-style: normal;
+  border: 0;
+  background-color: initial;
+}
+
+input {
+  color: inherit;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+}
+button,
+a {
+  all: initial;
+  font-size: inherit;
+  font-family: inherit;
+  box-sizing: inherit;
+  color: inherit;
+}
+select,
+option {
+  cursor: pointer;
+}
+// after adding min-width:0, it works with flex-shrink
+img {
+  min-width: 0;
+  display: inline-block;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+// borrowed from html5-boilerplate
+// https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+}
+[hidden] {
+  display: none !important;
+}
+@media print {
+  *,
+  *::before,
+  *::after {
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  pre,
+  blockquote,
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

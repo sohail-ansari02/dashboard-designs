@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "ngs": "ng serve --hmr --port 1406 --host 0.0.0.0",
     "dashboard": "ng g application --routing --style=scss"
   },
   "private": true,

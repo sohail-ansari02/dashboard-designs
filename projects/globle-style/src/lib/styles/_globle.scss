@@ -1,0 +1,14 @@
+@use "../styles/mixins";
+@forward "../styles/reset";
+
+// vendors
+@import "~reset-css/reset.css";
+@import "~normalize.css/normalize.css";
+
+:root {
+  font-size: 1rem;
+}
+
+@include mixins.global {
+  // outline: 1px solid red;
+}
