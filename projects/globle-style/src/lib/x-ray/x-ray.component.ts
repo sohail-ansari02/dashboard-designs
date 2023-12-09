@@ -5,7 +5,6 @@ import { Component, Inject, Renderer2 } from '@angular/core';
   selector: 'lib-x-ray',
   templateUrl: './x-ray.component.html',
   styleUrls: ['./x-ray.component.scss'],
-  // providers: [DOCUMENT]
 })
 export class XRayComponent {
   toggle: boolean = !false;
