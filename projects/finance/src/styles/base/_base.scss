@@ -17,10 +17,13 @@
 body {
   background-color: var(--clr-background);
   color: var(--clr-surface);
-  &.dark-theme{
+  transition: 0.2s linear;
+  will-change: color, background-color;
+
+  &.dark-theme {
     @include theme(dark);
   }
-  &.light-theme{
+  &.light-theme {
     @include theme(light);
   }
 }
