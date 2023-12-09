@@ -1,7 +1,73 @@
 /**
  * Basic typography style for copy text
  */
+
+
+%heading-1 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(82);
+}
+
+%heading-2 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(51);
+}
+
+%heading-3 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(41);
+}
+
+%heading-4 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(29);
+}
+
+%heading-5 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(20);
+}
+
+%heading-6 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(17);
+}
+
+%body-1 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(16);
+}
+
+%body-2 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(14);
+}
+
+%subtitle-1 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(14);
+}
+
+%subtitle-2 {
+  font-family: $roboto-font-stack;
+  font-size: toRem(12);
+}
+
+%button {
+  font-family: $roboto-font-stack;
+  font-size: toRem(14);
+}
+
+%overline {
+  font-family: $roboto-font-stack;
+  font-size: toRem(10);
+}
+
+%caption {
+  font-family: $roboto-font-stack;
+  font-size: toRem(12);
+}
+
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  @extend %body-1;
 }

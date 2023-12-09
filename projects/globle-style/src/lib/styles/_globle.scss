@@ -1,14 +1,25 @@
-@use "../styles/mixins";
 @forward "../styles/reset";
 
 // vendors
 @import "~reset-css/reset.css";
 @import "~normalize.css/normalize.css";
 
+@mixin global {
+  body,
+  body * {
+    @content;
+  }
+}
+
 :root {
   font-size: 1rem;
 }
+// for x-ray component
+.x-ray,
+.x-ray * {
+  outline: 1px solid currentColor;
+}
 
-@include mixins.global {
+@include global {
   // outline: 1px solid red;
 }

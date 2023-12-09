@@ -30,7 +30,10 @@
               "projects/finance/src/favicon.ico",
               "projects/finance/src/assets"
             ],
-            "styles": ["projects/finance/src/styles.scss"],
+            "styles": ["projects/finance/src/styles/_main.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["projects/finance/src/styles"]
+            },
             "scripts": []
           },
           "configurations": {
@@ -96,7 +99,7 @@
               "projects/finance/src/favicon.ico",
               "projects/finance/src/assets"
             ],
-            "styles": ["projects/finance/src/styles.scss"],
+            "styles": ["projects/finance/src/styles/main.scss"],
             "scripts": []
           }
         }

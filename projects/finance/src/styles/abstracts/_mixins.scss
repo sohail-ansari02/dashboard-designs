@@ -56,3 +56,12 @@
          + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+
+@mixin theme($theme-name) {
+  $color-pallate: if($theme-name == dark, $colors-dark, $colors-light);
+
+    @each $color, $value in $color-pallate {
+      --clr-#{$color}: #{$value};
+    }
+
+}

@@ -96,10 +96,11 @@ fieldset {
   *,
   *::before,
   *::after {
-    /* Black prints faster */
+    /* without shades prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;

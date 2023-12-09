@@ -3,3 +3,24 @@
 // -----------------------------------------------------------------------------
 
 // I added this styles in globle-style lib, because I am using monorepo
+:root {
+  // color-scheme: light !important;
+  @include theme(light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include theme(dark);
+  }
+}
+
+body {
+  background-color: var(--clr-background);
+  color: var(--clr-surface);
+  &.dark-theme{
+    @include theme(dark);
+  }
+  &.light-theme{
+    @include theme(light);
+  }
+}
