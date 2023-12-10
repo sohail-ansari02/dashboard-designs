@@ -59,7 +59,6 @@ export class ThemeSwitchComponent implements OnInit {
       console.log('Dark mode is preferred');
     } else {
       this.currentTheme = 'light';
-      // this.toggle = true;
       console.log('Light mode is preferred');
     }
   }
