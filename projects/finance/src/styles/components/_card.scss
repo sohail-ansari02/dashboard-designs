@@ -1,0 +1,13 @@
+.card {
+  transition: backgroud;
+  background-color: var(--clr-surface);
+  color: var(--clr-primary);
+  padding: toRem(40) toRem(33);
+  &:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-surface);
+  }
+  &__heading{
+      @extend %heading-4;
+  }
+}

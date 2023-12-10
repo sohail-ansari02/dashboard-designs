@@ -12,21 +12,22 @@ $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
   "Monaco", monospace !default;
 
 $colors-light: (
-  primary: hsl(67.83deg 81.18% 66.67%),
-  secondary: hsl(230deg 7.32% 16.08%),
+  primary: hsl(230deg 7.32% 16.08%),
+  secondary: hsl(67.83deg 81.18% 66.67%),
+  neutral: hsl(230, 3%, 45%),
   background: hsl(240deg 10% 96.08%),
   surface: hsl(0deg 0% 100%),
   alert: hsl(6.27deg 70.53% 62.75%),
 );
 
 $colors-dark: (
-  primary: hsl(67.83deg 81.18% 46.67%),
-  secondary: hsl(0, 2%, 76%),
+  primary: hsl(233, 13%, 13%),
+  secondary: hsl(68, 22%, 45%),
+  neutral: hsl(230, 3%, 45%),
   background: hsl(240, 10%, 8%),
   surface: hsl(0, 0%, 31%),
   alert: hsl(6.27deg 70.53% 42.75%),
 );
-
 
 /// Container's maximum width
 /// @type Length

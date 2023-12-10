@@ -13,20 +13,21 @@
 // /**
 //  * Buttons
 //  */
-// .button {
-//   @include vertical-rhythm;
-//   display: block;
-//   padding: 1rem;
-//   color: $button-color;
-//   // … etc.
+.button {
+  @extend %shadow;
+  display: block;
+  padding: toRem(6) toRem(11);
+  color:var(--clr-primary);
+  text-align: center;
+  // … etc.
 
-//   /**
-//    * Inlined buttons on large screens
-//    */
-//   @include respond-to('medium') {
-//     display: inline-block;
-//   }
-// }
+  /**
+   * Inlined buttons on large screens
+   */
+  // @include respond-to('medium') {
+  //   display: inline-block;
+  // }
+}
 
 // /**
 //  * Icons within buttons
@@ -42,3 +43,4 @@
 // .button--inline {
 //   display: inline-block;
 // }
+
