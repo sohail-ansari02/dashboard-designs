@@ -1,0 +1,14 @@
+<input type="checkbox" class="checkbox" id="checkbox" />
+<label
+  (click)="toggleTheme()"
+  for="checkbox"
+  class="checkbox-label"
+  [style.backgroundColor]="colorStyle?.bg"
+>
+  <i class="fas fa-moon"></i>
+  <i class="fas fa-sun"></i>
+  <span
+    class="ball {{ currentTheme == 'light' ? 'checked' : '' }} "
+    [style.color]="colorStyle?.btn"
+  ></span>
+</label>
