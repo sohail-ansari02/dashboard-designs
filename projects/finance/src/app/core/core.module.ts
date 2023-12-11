@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout/layout.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
-import { AppBarComponent } from './app-bar/app-bar.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 
 
@@ -10,7 +10,7 @@ import { AppBarComponent } from './app-bar/app-bar.component';
   declarations: [
     LayoutComponent,
     SideNavComponent,
-    AppBarComponent
+    TopBarComponent,
   ],
   imports: [
     CommonModule
