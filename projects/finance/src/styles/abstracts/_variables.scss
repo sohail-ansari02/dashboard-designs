@@ -48,10 +48,11 @@ $breakpoints: (
 /// @prop {String} key - Layer’s name
 /// @prop {Number} value - Z value mapped to the key
 $z-indexes: (
-  "modal": 5000,
-  "dropdown": 4000,
-  "default": 1,
   "below": -1,
+  "default": 1,
+  "dropdown": 2,
+  "top-bar": 3,
+  "modal": 4,
 );
 
 /// Relative or absolute URL where all assets are served from

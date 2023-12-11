@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
-
+@use "sass:map";
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
@@ -60,8 +60,11 @@
 @mixin theme($theme-name) {
   $color-pallate: if($theme-name == dark, $colors-dark, $colors-light);
 
-    @each $color, $value in $color-pallate {
-      --clr-#{$color}: #{$value};
-    }
+  @each $color, $value in $color-pallate {
+    --clr-#{$color}: #{$value};
+  }
+}
 
+@mixin zIndex($type: 'default') {
+  z-index: map.get($z-indexes,$type);
 }
