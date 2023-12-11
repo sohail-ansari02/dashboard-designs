@@ -16,7 +16,7 @@
 
 body {
   background-color: var(--clr-background);
-  color: var(--clr-surface);
+  color: var(--clr-primary);
   transition: color,background-color 0.2s linear;
   will-change: color, background-color;
 

@@ -1,0 +1,21 @@
+.layout {
+
+  $side-nav-width: 300px;
+
+  width: 100%;
+  height: 100vh;
+  background: inherit;
+  color: inherit;
+  display: flex;
+
+  &__side-nav,
+  &__container {
+    height: 100%;
+  }
+  &__side-nav{
+
+  }
+  &__container {
+  }
+
+}

@@ -1,0 +1,29 @@
+@import "main";
+
+// .card{
+  // color: $primary-color;
+// }
+.card {
+  @extend %shadow;
+  background-color: var(--clr-surface);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.stock-card {
+  // border: 2px solid var(--clr-secondary);
+  color: var(--clr-secondary);
+}
+
+.sales-card {
+  // border: 2px solid var(--clr-secondary);
+  color: var(--clr-secondary);
+}
