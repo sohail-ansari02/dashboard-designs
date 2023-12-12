@@ -1,6 +1,5 @@
 @import "main";
 .layout {
-
   $side-nav-width: 300px;
 
   position: relative;
@@ -8,7 +7,8 @@
   height: 100vh;
   background: inherit;
   color: inherit;
-  display: flex;
+  display: grid;
+  grid-template-columns: $side-nav-width 1fr;
 
   &__side-nav,
   &__container {
@@ -16,22 +16,14 @@
     overflow: auto;
   }
 
-  &__top-bar{
-    @include zIndex('top-bar');
+  &__top-bar {
+    @include zIndex("top-bar");
     position: sticky;
     top: 0;
   }
 
-
-  &__side-nav{
-    background-color: pink;
-    flex-shrink: 0;
-    flex-grow: 0;
-    flex-basis: $side-nav-width;
+  &__side-nav {
   }
   &__container {
-    background-color: mediumorchid;
-    flex-grow: 1;
   }
-
 }
