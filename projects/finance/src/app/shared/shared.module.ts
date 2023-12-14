@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { FlexLayoutModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ],
   exports: [
-    // FlexLayoutModule
+    FlexLayoutModule
   ]
 })
 export class SharedModule { }

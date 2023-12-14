@@ -1,10 +1,10 @@
 @import "main";
-:host > *{
- height: 100%;
- width: 100%;
+:host > * {
+  height: 100%;
+  width: 100%;
 }
 
-.side-nav{
+.side-nav {
   padding: toRem(38) toRem(35) toRem(48) toRem(20);
   background-color: var(--clr-primary);
   color: var(--clr-background);
@@ -12,14 +12,26 @@
   flex-direction: column;
   justify-content: space-between;
 
-  &__link{
-    color: var(--clr-surface);
-  }
-
-  &__logo{
+  &__logo {
     object-fit: contain;
     width: 145;
     height: auto;
     aspect-ratio: 145/40;
+    margin-block-end: toRem(48);
+  }
+  &__navigation {
+    overflow-y: auto;
+    flex-grow: 1;
+    margin-block-end: toRem(30);
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(12);
+
+  }
+  &__link {
+    color: var(--clr-surface);
+    text-transform: capitalize;
   }
 }

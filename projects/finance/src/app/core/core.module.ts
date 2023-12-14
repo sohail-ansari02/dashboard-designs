@@ -5,8 +5,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { RouterModule } from '@angular/router';
 import { SideNavBtnComponent } from './components/side-nav-btn/side-nav-btn.component';
-
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,12 +14,7 @@ import { SideNavBtnComponent } from './components/side-nav-btn/side-nav-btn.comp
     TopBarComponent,
     SideNavBtnComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
-  exports: [
-    LayoutComponent
-  ]
+  imports: [CommonModule, RouterModule, SharedModule],
+  exports: [LayoutComponent],
 })
-export class CoreModule { }
+export class CoreModule {}
