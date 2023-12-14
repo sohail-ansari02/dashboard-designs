@@ -1,1 +1,21 @@
-<p>top-bar works!</p>
+<header
+  fxLayout
+  fxLayoutAlign="space-between"
+  fxlayoutGap="20px"
+  class="header"
+>
+<span fxLayout fxLayoutGap="10px" class="header__search">
+  <app-icon name="search"></app-icon>
+  <input />
+</span>
+  <div
+    fxLayout
+    fxLayoutAlign="space-between"
+    fxlayoutGap="20px"
+    class="header__panel"
+  >
+    <button class="header__notification btn badge">
+      <app-icon name="bell "></app-icon>
+    </button>
+  </div>
+</header>

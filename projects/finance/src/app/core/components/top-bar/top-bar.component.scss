@@ -1,0 +1,19 @@
+.header{
+  padding: 25px 30px;
+  border-bottom: 1px solid var(--clr-neutral);
+  background-color: var(--clr-background);
+
+  &__search{
+    background-color: var(--clr-surface);
+    padding: 14px 12px;
+    border-radius: 30px;
+  }
+  &__panel{
+
+  }
+  &__notification{
+    background-color: var(--clr-surface);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+  }
+}

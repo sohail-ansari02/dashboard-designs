@@ -30,7 +30,9 @@
               "projects/finance/src/favicon.ico",
               "projects/finance/src/assets"
             ],
-            "styles": ["projects/finance/src/styles/_main.scss"],
+            "styles": [
+              "projects/finance/src/styles/_main.scss"
+            ],
             "stylePreprocessorOptions": {
               "includePaths": ["projects/finance/src/styles"]
             },

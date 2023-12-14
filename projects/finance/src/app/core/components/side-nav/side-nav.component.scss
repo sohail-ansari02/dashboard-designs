@@ -8,9 +8,6 @@
   padding: toRem(38) toRem(35) toRem(48) toRem(20);
   background-color: var(--clr-primary);
   color: var(--clr-background);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   &__logo {
     object-fit: contain;
@@ -21,17 +18,15 @@
   }
   &__navigation {
     overflow-y: auto;
-    flex-grow: 1;
     margin-block-end: toRem(30);
-  }
-  &__links {
-    display: flex;
-    flex-direction: column;
-    gap: toRem(12);
-
   }
   &__link {
     color: var(--clr-surface);
-    text-transform: capitalize;
+    width: 100%;
+
+    &--active{
+      background-color: var(--clr-neutral);
+      color: var(--clr-secondary);
+    }
   }
 }

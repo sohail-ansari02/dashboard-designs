@@ -1,13 +1,14 @@
-<aside class="side-nav">
+<aside fxLayout="column" fxLayoutAlign="space-between" class="side-nav">
   <img class="side-nav__logo" src="assets/logo.png" alt="logo" width="145" />
-  <nav class="side-nav__navigation">
-    <ul class="side-nav__links">
-      <app-side-nav-btn *ngFor="let item of [1,1,1,]" class="side-nav__link">link</app-side-nav-btn>
-      <app-side-nav-btn *ngFor="let item of [1,1,1,]" class="side-nav__link">link</app-side-nav-btn>
-      <app-side-nav-btn *ngFor="let item of [1,1,1,]" class="side-nav__link">link</app-side-nav-btn>
-      <app-side-nav-btn *ngFor="let item of [1,1,1,]" class="side-nav__link">link</app-side-nav-btn>
+  <nav fxFlex="grow" class="side-nav__navigation">
+    <ul fxLayout="column" fxLayoutGap="12px" class="side-nav__links">
+      <app-side-nav-btn
+        *ngFor="let link of links"
+        icon="{{link.icon}}"
+        class="side-nav__link side-nav__link--active"
+        >{{ link.name }}</app-side-nav-btn
+      >
     </ul>
   </nav>
-  <app-side-nav-btn class="side-nav__link">link</app-side-nav-btn>
+  <app-side-nav-btn icon="sign-out-alt" class="side-nav__link">Log Out</app-side-nav-btn>
 </aside>
-

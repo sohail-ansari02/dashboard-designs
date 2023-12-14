@@ -1,14 +1,13 @@
 @import "main";
 
 :host{
-  color: var(--clr-background);
-  background-color: transparent;
   font-size: toRem(14);
-
+  width: auto;
+  border-radius: 10px;
 }
 .button{
-  @include inheritColors();
-  display: flex;
-  gap: toRem(10);
-  width: 100%;
+  width: inherit;
+  gap: 10px;
+  padding: toRem(12) toRem(17);
+  cursor: pointer;
 }

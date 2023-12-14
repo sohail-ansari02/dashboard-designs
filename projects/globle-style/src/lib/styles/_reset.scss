@@ -28,6 +28,9 @@
 
 input {
   color: inherit;
+  &:focus-visible{
+    outline: none;
+  }
 }
 
 ul,

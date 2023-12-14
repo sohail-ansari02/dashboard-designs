@@ -19,6 +19,7 @@ body {
   color: var(--clr-primary);
   transition: color,background-color 0.2s linear;
   will-change: color, background-color;
+  font-family: $roboto-font-stack !important;
 
   &.dark-theme {
     @include theme(dark);
