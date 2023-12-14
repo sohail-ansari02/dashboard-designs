@@ -8,11 +8,11 @@
   @include theme(light);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    @include theme(dark);
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     @include theme(dark);
+//   }
+// }
 
 body {
   background-color: var(--clr-background);

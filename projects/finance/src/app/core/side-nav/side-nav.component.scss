@@ -1,0 +1,25 @@
+@import "main";
+:host > *{
+ height: 100%;
+ width: 100%;
+}
+
+.side-nav{
+  padding: toRem(38) toRem(35) toRem(48) toRem(20);
+  background-color: var(--clr-primary);
+  color: var(--clr-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__link{
+    color: var(--clr-surface);
+  }
+
+  &__logo{
+    object-fit: contain;
+    width: 145;
+    height: auto;
+    aspect-ratio: 145/40;
+  }
+}
