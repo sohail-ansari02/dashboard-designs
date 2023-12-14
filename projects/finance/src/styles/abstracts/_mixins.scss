@@ -68,3 +68,8 @@
 @mixin zIndex($type: 'default') {
   z-index: map.get($z-indexes,$type);
 }
+
+@mixin inheritColors(){
+  color: inherit;
+  background-color: inherit;
+}

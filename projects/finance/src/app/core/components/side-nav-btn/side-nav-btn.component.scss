@@ -1,0 +1,11 @@
+@import "main";
+:host{
+  color: var(--clr-background);
+  background-color: transparent;
+  font-size: toRem(14);
+
+}
+.button{
+  @include inheritColors();
+
+}

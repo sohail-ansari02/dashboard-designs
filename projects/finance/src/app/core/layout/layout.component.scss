@@ -1,5 +1,7 @@
 @import "main";
 .layout {
+  @include inheritColors();
+
   $side-nav-width: null;
 
   position: relative;
@@ -7,8 +9,6 @@
   width: 100%;
   height: 100vh;
 
-  background: inherit;
-  color: inherit;
 
   display: grid;
   grid-template-columns: if($side-nav-width, $side-nav-width, auto) 1fr;
