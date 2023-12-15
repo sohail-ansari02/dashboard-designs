@@ -1,0 +1,33 @@
+@import "main";
+.switch{
+  position: relative;
+  background-color: var(--clr-surface);
+  border-radius: 40px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 11px;
+
+  cursor: pointer;
+
+  &:hover &__list{
+    display: flex;
+  }
+  &__list{
+    @extend %shadow;
+    background-color: var(--clr-surface);
+    padding: 8px 20px;
+    border-radius: 26px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+}

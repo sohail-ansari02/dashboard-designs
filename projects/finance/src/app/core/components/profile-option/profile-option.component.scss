@@ -1,0 +1,17 @@
+@import "main";
+
+.profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+
+  &__list {
+    @extend %shadow;
+    position: absolute;
+    background-color: var(--clr-surface);
+  }
+  &__pic{
+    border-radius: 50%;
+  }
+}

@@ -23,3 +23,9 @@
 @import "themes";
 
 // $card-color: red;
+
+select{
+  &:focus-within{
+    outline: none;
+  }
+}

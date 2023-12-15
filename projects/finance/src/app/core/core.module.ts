@@ -6,6 +6,8 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { RouterModule } from '@angular/router';
 import { SideNavBtnComponent } from './components/side-nav-btn/side-nav-btn.component';
 import { SharedModule } from '../shared/shared.module';
+import { ProfileSwitchComponent } from './components/profile-switch/profile-switch.component';
+import { ProfileOptionComponent } from './components/profile-option/profile-option.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { SharedModule } from '../shared/shared.module';
     SideNavComponent,
     TopBarComponent,
     SideNavBtnComponent,
+    ProfileSwitchComponent,
+    ProfileOptionComponent,
   ],
   imports: [CommonModule, RouterModule, SharedModule],
   exports: [LayoutComponent],
