@@ -1,0 +1,10 @@
+@import "main";
+.stat {
+  &__title {
+    @extend %heading-6;
+    text-transform: capitalize;
+  }
+  &__title {
+    @extend %subtitle-2;
+  }
+}

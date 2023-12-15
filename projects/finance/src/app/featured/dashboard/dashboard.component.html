@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<section  fxLayout="column" [fxLayoutGap]="gap" class="dashboard">
+  <div fxLayout [fxLayoutGap]="gap" fxLayoutAlign="space-between"  class="stat-cards">
+    <app-stat-card fxFlex="grow" *ngFor="let i of [1,2,3,4]"></app-stat-card>
+  </div>
+  <div fxLayout [fxLayoutGap]="gap"  class="stat-cards">
+    <div fxFlex="grow" class="card">chart</div>
+    <div class="card">normal card</div>
+  </div>
+  <div fxLayout [fxLayoutGap]="gap"  class="stat-cards">
+    <div fxFlex="grow" class="card">chart</div>
+    <div class="card">normal card</div>
+  </div>
+</section>

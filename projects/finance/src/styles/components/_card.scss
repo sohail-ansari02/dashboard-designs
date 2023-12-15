@@ -1,8 +1,11 @@
 .card {
+  @extend %shadow;
   transition: backgroud;
   background-color: var(--clr-surface);
   color: var(--clr-primary);
   padding: toRem(40) toRem(33);
+  border-radius: 10px;
+
   &:hover {
     background-color: var(--clr-primary);
     color: var(--clr-surface);
