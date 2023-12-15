@@ -11,8 +11,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: TestComponent
-      }
+        loadChildren: () =>
+          import('./featured/dashboard/dashboard.module').then(
+            (m) => m.DashboardModule
+          ),
+      },
     ],
   },
   // {
