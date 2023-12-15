@@ -8,16 +8,16 @@
   @include theme(light);
 }
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     @include theme(dark);
-//   }
-// }
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include theme(dark);
+  }
+}
 
 body {
   background-color: var(--clr-background);
   color: var(--clr-primary);
-  transition: color,background-color 0.2s linear;
+  transition: color,background-color 0.1s linear;
   will-change: color, background-color;
   font-family: $roboto-font-stack !important;
 

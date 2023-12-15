@@ -4,18 +4,17 @@
   fxlayoutGap="20px"
   class="header"
 >
-<span fxLayout fxLayoutGap="10px" class="header__search">
-  <app-icon name="search"></app-icon>
-  <input placeholder="Search" />
-</span>
-  <div
-    fxLayout
-    fxlayoutGap="20px"
-    class="header__panel"
-  >
+  <span fxLayout fxLayoutGap="10px" class="header__search">
+    <app-icon name="search"></app-icon>
+    <input placeholder="Search" />
+  </span>
+  <div fxLayout fxlayoutGap="20px" fxLayoutAlign="start center" class="header__panel">
     <button class="header__notification btn badge">
       <app-icon name="bell "></app-icon>
     </button>
     <app-profile-switch></app-profile-switch>
+    <lib-theme-switch
+      [colorStyle]="{ btn: 'var(--clr-accent)', bg: 'var(--clr-secondary)' }"
+    ></lib-theme-switch>
   </div>
 </header>

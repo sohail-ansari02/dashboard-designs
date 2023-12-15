@@ -8,6 +8,7 @@ import { SideNavBtnComponent } from './components/side-nav-btn/side-nav-btn.comp
 import { SharedModule } from '../shared/shared.module';
 import { ProfileSwitchComponent } from './components/profile-switch/profile-switch.component';
 import { ProfileOptionComponent } from './components/profile-option/profile-option.component';
+import { GlobleStyleModule } from 'projects/globle-style/src/public-api';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ProfileOptionComponent } from './components/profile-option/profile-opti
     ProfileSwitchComponent,
     ProfileOptionComponent,
   ],
-  imports: [CommonModule, RouterModule, SharedModule],
+  imports: [CommonModule, RouterModule, SharedModule, GlobleStyleModule],
   exports: [LayoutComponent],
 })
 export class CoreModule {}
