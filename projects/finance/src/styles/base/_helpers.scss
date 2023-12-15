@@ -46,17 +46,3 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.badge{
-  --badge-bg: var(--clr-alert);
-  position: relative;
-  &::after{
-    content: '';
-    width: 10px;
-    height: 10px;
-    background-color: var(--badge-bg);
-    position: absolute;
-    top: 6px;
-    right: 6px;
-    border-radius: 50%;
-  }
-}
