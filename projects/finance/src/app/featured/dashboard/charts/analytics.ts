@@ -42,8 +42,15 @@ export const analytics: Highcharts.Options = {
   },
 
   tooltip: {
-    headerFormat: '',
-    pointFormat: '${point.y}',
-    footerFormat: '',
+    formatter: function () {
+      return '$' + this.point.y;
+    },
+  },
+
+  legend: {
+    useHTML: true,
+    title: {
+      text: '',
+    },
   },
 };

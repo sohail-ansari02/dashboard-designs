@@ -14,25 +14,31 @@
   <div gdColumns="1fr 290px" [gdGap]="gap" class="stat-cards">
     <div class="card">
       <highcharts-chart
-        [Highcharts]="Highcharts"
-        [options]="chartOption['analytics']"
-        style="width: auto; height: 250px; display: block"
+      [Highcharts]="Highcharts"
+      [options]="chartOption['analytics']"
+      [runOutsideAngular]="true"
+      style="width: auto; height: 250px; display: block"
       ></highcharts-chart>
     </div>
     <div class="card">normal card</div>
   </div>
 
+  <div class="card-heading">
+    Analytics(I used width: fit-content; to make below chart's width dynamic)
+  </div>
   <div fxLayout [fxLayoutGap]="gap" class="stat-cards">
     <div fxFlex="1 0 auto" class="card">
       <div class="card-heading">Analytics</div>
       <highcharts-chart
-      [Highcharts]="Highcharts"
-      [options]="chartOption['analytics']"
-      style="width: auto; height: 250px; display: block"
-    ></highcharts-chart>
+        [Highcharts]="Highcharts"
+        [options]="chartOption['analytics']"
+        style="
+          width: fit-content;
+          height: 250px;
+          display: block;
+        "
+      ></highcharts-chart>
     </div>
     <div fxFlex="0 0 290px" class="card">normal card</div>
   </div>
-
-
 </section>

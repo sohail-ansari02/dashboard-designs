@@ -19,6 +19,7 @@ Highcharts.setOptions({
     y: 60,
   },
   xAxis: {
+    lineColor: 'var(--clr-neutral)',
     labels: {
       style: {
         color: 'var(--clr-neutral)',
@@ -27,6 +28,7 @@ Highcharts.setOptions({
     gridLineColor: 'var(--clr-neutral)',
   },
   yAxis: {
+    lineColor: 'var(--clr-neutral)',
     labels: {
       style: {
         color: 'var(--clr-neutral)',
@@ -39,16 +41,20 @@ Highcharts.setOptions({
     verticalAlign: 'top',
   },
   tooltip: {
+    followPointer: true,
     shape: 'callout',
     backgroundColor: 'var(--clr-primary)',
     borderRadius: 20,
     borderWidth: 0,
-
     style: {
       color: 'var(--clr-background)',
+      padding: '0'
     },
   },
   plotOptions: {
+    column: {
+      borderWidth: 0,
+    },
     series: {
       states: {
         inactive: {
@@ -56,6 +62,7 @@ Highcharts.setOptions({
         },
       },
     },
+
   },
 });
 
