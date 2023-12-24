@@ -9,7 +9,6 @@
   &__side-nav,
   &__container {
     height: 100%;
-    overflow: auto;
   }
 
   &__top-bar {
@@ -20,10 +19,12 @@
   }
 
   &__side-nav {
+    overflow: auto;
   }
   &__container {
   }
-  &__content{
+  &__content {
+    overflow: auto;
     padding: 20px 40px;
   }
 }
