@@ -8,9 +8,9 @@
   & .card-heading + * {
     border-color: blue;
     &::after {
-      content: "⬅ check its width is small in grid vs flex";
+      content: "⬅ check chart's width is small in grid vs flex";
       position: absolute;
-      right: -105px;
+      right: -41%;
       top: 101px;
       z-index: 99;
     }
