@@ -13,6 +13,9 @@
   </div>
   <div gdColumns="1fr 290px" [gdGap]="gap" class="stat-cards">
     <div class="card">
+      <div class="card-heading">
+        Analytics(I used width: fit-content; to make below chart's width dynamic)
+      </div>
       <highcharts-chart
       [Highcharts]="Highcharts"
       [options]="chartOption['analytics']"
@@ -33,7 +36,6 @@
         [Highcharts]="Highcharts"
         [options]="chartOption['analytics']"
         style="
-          width: fit-content;
           height: 250px;
           display: block;
         "

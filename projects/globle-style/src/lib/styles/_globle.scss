@@ -19,6 +19,7 @@
 .x-ray,
 .x-ray * {
   outline: 1px solid currentColor;
+  // opacity: .9;
 }
 
 @include global {
