@@ -6,6 +6,8 @@
   width: 100%;
   height: 100vh;
 
+  overflow: hidden;
+
   &__side-nav,
   &__container {
     height: 100%;
@@ -20,11 +22,12 @@
 
   &__side-nav {
     overflow: auto;
+    height: 100vh;
   }
   &__container {
+    overflow: auto;
   }
   &__content {
-    overflow: auto;
     padding: 20px 40px;
   }
 }
